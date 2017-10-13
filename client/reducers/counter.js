@@ -7,6 +7,9 @@ const counter = (state = 0, action) => {
     case 'DECREMENT':
       nextState = state - 1
       return nextState
+    case 'INCREMENT_BY':
+      nextState = state + action.num
+      return nextState
     default:
       return state
   }
